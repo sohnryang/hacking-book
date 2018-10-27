@@ -11,7 +11,7 @@ int main() {
     hacky_nonpointer = (unsigned int) char_array;
 
     for (i = 0; i < 5; ++i) {
-        printf("[hacky_nonpointe] points to %p, which contains the char '%c'\n",
+        printf("[hacky_nonpointer] points to %p, which contains the char '%c'\n",
                hacky_nonpointer, *((char *) hacky_nonpointer));
         hacky_nonpointer = hacky_nonpointer + sizeof(char);
     }
