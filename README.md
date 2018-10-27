@@ -10,5 +10,9 @@ Since the second edition of the book was published in 2008, there are many incon
 ### Architecture-Dependent
 - `pointer_types5.c`: The type of `hacky_nonpointer` should be `unsigned long long` when compiled to 64-bit binary. The code is patched in `pointer_types5_x64.c`. If it's compiled to 32-bit binary, the original code works fine.
 
+### Coding Style
+1. There are spaces in front and back of operators. (example: `i = 0;` instead of `i=0;`)
+2. In for statements, use pre-increment operator rather than post-increment operator.
+
 ### Misc
 - All code: I modified the book's original code to return 0 if ended successfully.
